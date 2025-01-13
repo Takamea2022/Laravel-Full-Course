@@ -25,3 +25,11 @@ This is the name of the variable that each individual item in the $cars collecti
 This specifies a fallback Blade view (resources/views/car/empty.blade.php) to be rendered if the $cars collection is empty. This is optional, and if omitted, nothing will be displayed when the collection is empty. --}}
 
 @each('car.view', $cars, 'car', 'car.empty')
+
+{{-- This is the same --}}
+<?php
+  use Illuminate\Support\Str;
+
+?>
+{{-- This is the same --}}
+@use('Illuminate\Support\Str')
